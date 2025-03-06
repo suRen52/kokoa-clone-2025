@@ -29,10 +29,10 @@
         <p class="welcom-header__text">If you have a kakao Account, log in with your email or phone number.</p>
     </header>
 
-    <form id="login-form">
+    <form id="login-form" action="friends.html" method="get">
         <!--form은 하나일 것 같아서 구분하기 위한 class name에 큰 의미x-->
-        <input type="text" placeholder="Email or phone number" />
-        <input type="password" placeholder="Password" />
+        <input name="username" type="text" placeholder="Email or phone number" />
+        <input name="password" type="password" placeholder="Password" />
         <input type="submit" value="Log in" />
         <a href="#">Find Kokoa Account or Password</a>
     </form>

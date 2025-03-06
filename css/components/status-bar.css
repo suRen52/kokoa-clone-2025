@@ -1,0 +1,27 @@
+/*다른 창에도 satus-bar가 존재하기 때문에 따로 css파일을 구분해서 쓸 수 있다*/
+
+.status-bar{
+    display : flex;
+    justify-content : center;
+    padding : 5px 3px;
+}
+.status-bar__column{
+    width: 33%;
+}
+.status-bar__column:first-child span{ 
+    margin-right : 5px;
+}
+.status-bar__column:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+.status-bar__column:last-child{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.status-bar__column .fa-battery-three-quarters,
+.status-bar__column .fa-signal{
+    margin : 0 5px;
+}

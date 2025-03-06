@@ -1,0 +1,5 @@
+/*이 파일은 styles.css파일에 반드시 improt되어야 한다. */
+
+:root{
+    --yellow : #fae100;
+}
