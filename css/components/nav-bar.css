@@ -5,7 +5,11 @@
 
     background-color: rgba(230, 227, 227, 0.333);
     padding : 20px 50px;
-    box-sizing : border-box;
+    box-sizing : border-box; 
+    /*이유 : box가 100px라고 가정할 때, width가 100% 이도록 적고 padding을 50px 주었기 때문에
+    box는 150px에 content가 들어갈 수 있는 부분은 100px가 됨
+    따라서 width : 100%가 되었을 때 box의 크기가 커지면서 마지막에 있는 아이콘이 뒤로 밀려서 사라지게 된 것이다? 
+    그 때, border-box를 걸면 padding를 줘도 box 사이즈를 늘리지 말라고 명령한 것*/
     border-top : 1px solid rgba(121,121,121,0.3);
 }
 .nav__list{
@@ -13,6 +17,36 @@
     justify-content: space-between;
 }
 .nav__list a{
-  color : #2F363E
+    position:relative;
+    color : #2F363E
   /*reset.css에 a의 초기설정을 지워줌*/
+ 
+}
+.nav--notification{
+    background-color: tomato;
+    height : 25px;
+    width : 25px; 
+    border-radius: 50%;
+    display : flex;
+    justify-content: center;
+    align-content: center;
+    color : white;
+    font-weight: 600;
+
+    position: absolute;
+    left : 15px;
+    bottom : 15px;
+}
+.nav--notif{
+    background-color: tomato;
+    height : 5px;
+    width : 5px; 
+    border-radius: 50%;
+    display : flex;
+    justify-content: center;
+    align-content: center;
+
+    position: absolute;
+    left : 30px; 
+    bottom : 25px;
 }
