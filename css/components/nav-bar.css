@@ -1,0 +1,18 @@
+.nav{
+    position : fixed;
+    bottom : 0; /*width 없어짐. 왜?, 어떻게 알지?*/
+    width : 100%; /*마지막 icon 사라짐, padding 떄문, 8번줄 추가*/
+
+    background-color: rgba(230, 227, 227, 0.333);
+    padding : 20px 50px;
+    box-sizing : border-box;
+    border-top : 1px solid rgba(121,121,121,0.3);
+}
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__list a{
+  color : #2F363E
+  /*reset.css에 a의 초기설정을 지워줌*/
+}
