@@ -1,0 +1,53 @@
+/*04번이 기본값 - 기본값으로 코딩된 내용,
+03 스크린에서는 조금씩 수정해서 사용*/
+.user-component{
+    justify-content: space-between;
+}
+/*2>를 오른쪽 끝으로 분리시키기 위해 사용, 다시이해*/
+
+.user-component,
+.user-component__column:first-child{
+    display : flex;
+    align-items:  center;
+}
+
+.user-component__avatar{
+    width : 70px;
+    height: 70px;
+    border-radius: 27px;
+    margin-right: 20px;
+}
+
+.user-component__title{
+    font-weight: 600;
+    font-size:22px;
+}
+.user-component__subtitle{
+    margin-top:10px;
+    font-size:17px;
+    color:rgba(0,0,0,0.5);
+}
+.user-component__avatar--xl{
+    width : 80px;
+    height: 80px;
+}
+.user-component__avatar--sm{
+    width : 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+.user-component__title--not-bold{
+    font-weight: 400;
+} /*얘만 안 굵으니까, 새로 class를 주고 재설정*/
+
+.user-component__column:last-child{
+    color:rgba(0,0,0,0.4);
+    display : flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.user-component__time{
+    margin-bottom : 10px;
+    display:block;
+}

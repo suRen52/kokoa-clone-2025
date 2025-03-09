@@ -2,4 +2,6 @@
 
 :root{
     --yellow : #fae100;
+    --horizontal-space: 30px;/*03, 04이미지 등에서 아이콘의 맨왼쪽 간격 만들기*/
+    --main-border: 1px solid #D5D5D5;
 }
